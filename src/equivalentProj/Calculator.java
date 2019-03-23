@@ -281,8 +281,7 @@ public class Calculator {
 				return null;
 			}
 			String result = src;
-			while (result.charAt(0) == '('
-					&& result.charAt(result.length() - 1) == ')') {
+			while (result.charAt(0) == '(' && result.charAt(result.length() - 1) == ')') {
 				int parenthes = 0;
 				for (int i = 0; i < result.length() - 1; i++) {
 					if (result.charAt(i) == '(') {
